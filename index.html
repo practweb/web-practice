@@ -28,7 +28,7 @@
           <li><a href="#" class="uppercase">Contact</a></li>
           <li><a href="#" class="uppercase">Sign up</a></li>
         </ul>
-        <button class="btn btn_login">
+        <button id="loginBtn" class="btn btn_login">
           <i class="fa-solid fa-arrow-right-to-bracket"></i>
           <span>Login</span>
         </button>
@@ -51,6 +51,20 @@
 
   
 
+  <div id="modal" class="modal-wrap d-none">
+    <div class="modal d-flex item-center">
+      <div id="closeModal" class="close-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <form action="#" class="modal-form d-flex item-center">
+        <label for="username">Username:</label>
+        <input id="username" type="text">
+        <label for="password">Username:</label>
+        <input id="password" type="password">
+        <input type="submit" class="btn btn__light">
+      </form>
+    </div>
+  </div>
   <script src="assets/js/script.js"></script>
 </body>
 

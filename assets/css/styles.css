@@ -161,6 +161,55 @@ ul {
   font-size: .875rem;
 }
 
+.modal-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000007d;
+}
+
+.modal {
+  width: 80vw;
+  height: 50dvh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  flex-direction: column;
+  font-size: 1.5rem;
+  transform: translate(-50%,-50%);
+  background-color: var(--light-color);
+}
+
+.modal-form {
+  height: 100%;
+  flex-direction: column;
+}
+
+.modal-form label {
+  margin-bottom: 20px;
+}
+
+.modal-form label:not(:first-child) {
+  margin-top: 40px;
+}
+
+.modal-form input[type="submit"] {
+  margin-top: 40px;
+}
+
+.modal input:not([type="submit"]) {
+  display: block;
+  height: 30px;
+}
+
+.modal .close-modal {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 
 /* ------- Media Queries ------------ */
 
