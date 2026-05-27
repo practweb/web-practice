@@ -66,8 +66,8 @@ ul {
 
 .main-header {
   height: 100vh;
-  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), 
-                    url(../images/header-bg.png);
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
+    url(../images/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -93,7 +93,7 @@ ul {
   width: 25px;
 }
 
-.navbar .logo span{
+.navbar .logo span {
   margin-left: 10px;
   line-height: 40px;
   font-size: 1.125rem;
@@ -137,17 +137,49 @@ ul {
 
 
 /* ------- Media Queries ------------ */
-@media screen and (min-width: 1150px) {
-  .content-wrap {
-    padding: 0;
-  }
+
+@media screen and (min-width: 992px) {
   .btn_login {
     padding: 12px 28px;
   }
+
   .btn_login span {
     display: inline;
   }
+
   .btn_login i {
     display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .main-menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+
+  .main-menu li:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .main-menu li a {
+    color: var(--light-color);
+    font-size: .875rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .content-wrap {
+    padding: 0;
   }
 }
