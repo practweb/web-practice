@@ -49,6 +49,7 @@ ul {
   text-transform: uppercase;
   border-radius: 6px;
   font-size: .875rem;
+  cursor: pointer;
 }
 
 .btn_login {
@@ -56,12 +57,18 @@ ul {
   margin-left: auto;
   border: 1px solid var(--light-color);
   background: none repeat scroll 0 0 transparent;
-  cursor: pointer;
   color: var(--light-color);
 }
 
 .btn_login span {
   display: none;
+}
+
+.btn__light {
+  padding: 16px 52px;
+  border: none;
+  background-color: var(--light-color);
+  color: var(--main-color);
 }
 
 .main-header {
@@ -71,6 +78,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: var(--light-color);
 }
 
 .content-wrap {
@@ -135,10 +143,50 @@ ul {
   color: var(--dark-color);
 }
 
+.header-content-wrap {
+  flex-direction: column;
+  height: calc(100% - 60px);
+}
+
+.header-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.header-subtitle {
+  max-width: 500px;
+  margin-bottom: 20px;
+  line-height: 150%;
+  text-align: center;
+  font-size: .875rem;
+}
+
 
 /* ------- Media Queries ------------ */
 
+@media screen and (min-width: 768px) {
+  .header-title {
+    margin-bottom: 40px;
+    font-size: 4.5rem;
+  }
+
+  .header-subtitle {
+    margin-bottom: 40px;
+    line-height: 150%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .navbar .logo span {
+    line-height: 100px;
+  }
+  
   .btn_login {
     padding: 12px 28px;
   }
@@ -175,6 +223,10 @@ ul {
   .main-menu li a {
     color: var(--light-color);
     font-size: .875rem;
+  }
+
+  .header-content-wrap {
+    height: calc(100% - 100px);
   }
 }
 
