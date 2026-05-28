@@ -268,6 +268,19 @@ ul {
   color: var(--light-color);
 }
 
+.media-section_bg {
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+.media-section_bg .media-section-content p {
+  margin-bottom: 40px;
+}
+
+.media-section_bg .download-icons a:not(:last-child) {
+  margin-right: 24px;
+}
+
 
 
 /* ------- Media Queries ------------ */
@@ -337,8 +350,6 @@ ul {
     height: calc(100% - 100px);
   }
 
-  /* ------------------- */
-
   .media-section {
     padding: 94px 0;
   }
@@ -367,10 +378,6 @@ ul {
     font-size: 1.3rem;
     color: var(--light-color);
   }
-
-
-  /* ------------------------ */
-
 }
 
 @media screen and (min-width: 1150px) {
